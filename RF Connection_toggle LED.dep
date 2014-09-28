@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2217649966</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\HAL\cc430x613x_PMM.c</file>
+      <file>$PROJ_DIR$\HAL\cc430x613x_PMM.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\HAL\RF1A.c</file>
+      <file>$PROJ_DIR$\HAL\RF1A.h</file>
+      <file>$PROJ_DIR$\RF_Connection.c</file>
+      <file>$PROJ_DIR$\RF_Connection.h</file>
+      <file>$TOOLKIT_DIR$\inc\cc430x513x.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF_Connection2.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\[ROOT_NODE]</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF_Connection.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF1A.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF1A2.pbi</file>
+      <file>$PROJ_DIR$\RF_Connection2.c</file>
+      <file>$PROJ_DIR$\HAL\RF1A2.h</file>
+      <file>$PROJ_DIR$\HAL\RF_config_Olimex\smartrf_CC430F5137_868MHz_38k4Baud.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF_Connection.r43</file>
+      <file>$TOOLKIT_DIR$\inc\cc430x613x.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cc430x613x_PMM.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\cc430x613x_PMM.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF1A.r43</file>
+      <file>$PROJ_DIR$\HAL\RF1A2.c</file>
+      <file>$PROJ_DIR$\RF_Connection2.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\HAL\RF_config_Olimex\smartrf_CC430F5137_915MHz_38k4Baud.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\lnkcc430f5137.xcl</file>
+      <file>$PROJ_DIR$\Debug\Exe\RF Connection_toggle LED.d43</file>
+      <file>$PROJ_DIR$\Debug\Exe\RF Connection_toggle LED.ulp</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF_Connection2.r43</file>
+      <file>$TOOLKIT_DIR$\config\linker\multiplier32_loc2.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF1A2.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\RF Connection_toggle LED.pbd</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ULP430</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>XLINK</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\HAL\cc430x613x_PMM.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 28 10 1</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 20 28 10 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 28 10 6</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 7 28 10 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\HAL\RF1A.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 7 28 10</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 4 7 28 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RF_Connection.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 28 10 4 1 6 18</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 7 28 10 4 1 6 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ULP430</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>XLINK</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\RF_Connection2.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 28 10 17 1 25 27</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 7 28 10 17 1 25 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\HAL\RF1A2.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 7 28 10</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 17 7 28 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\RF Connection_toggle LED.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 29 33 22 13 23 34 19 12</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

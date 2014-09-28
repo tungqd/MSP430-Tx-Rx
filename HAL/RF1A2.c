@@ -79,7 +79,7 @@ void ReadBurstReg2(unsigned char addr, unsigned char *buffer, unsigned char coun
   unsigned int i;
   
   while (!(RF1AIFCTL1 & RFINSTRIFG));       // Wait for INSTRIFG
-  RF1AINSTR1B = (addr | RF_REGRD);          // Send addr of first conf. reg. to be read 
+  RF1AINSTR1B = (addr | RF_REGWR);          // Send addr of first conf. reg. to be read 
                                             // ... and the burst-register read instruction
   for (i = 0; i < (count-1); i++)
   {

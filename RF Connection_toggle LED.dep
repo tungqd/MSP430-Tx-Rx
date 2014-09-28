@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>2217649966</fileChecksum>
+  <fileChecksum>1439870623</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
@@ -94,11 +94,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 7 28 10 6</file>
+          <file> 7 28 10 25 6</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 7 28 10 6</file>
+          <file> 7 28 10 25 6</file>
         </tool>
       </inputs>
     </file>
@@ -212,7 +212,7 @@
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 29 33 22 13 23 34 19 12</file>
+          <file> 29 33 22 13 23 34 19 32 12</file>
         </tool>
       </inputs>
     </file>

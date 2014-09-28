@@ -2177,6 +2177,12 @@
   <file>
     <name>$PROJ_DIR$\RF_Connection.h</name>
   </file>
+  <file>
+    <name>$PROJ_DIR$\RF_Connection2.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\RF_Connection2.h</name>
+  </file>
 </project>
 
 

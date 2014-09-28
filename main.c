@@ -13,7 +13,7 @@
 // Target : CC430F5137
 #include <cc430x513x.h>
 #include  <intrinsics.h>
-/* #include "RF_Connection2.h"*/
+#include "RF_Connection2.h"
 #include "RF_Connection.h"
 
 
@@ -153,8 +153,8 @@ int main(void){
   init_devices();
   while(1){ 
     asm("NOP");
-    RF_Connection_Test();
-    //RF_Connection_Test2();
+    //RF_Connection_Test();
+    RF_Connection_Test2();
     asm("NOP");
   }
   

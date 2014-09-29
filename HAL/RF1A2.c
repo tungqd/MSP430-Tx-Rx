@@ -79,7 +79,7 @@ void ReadBurstReg2(unsigned char addr, unsigned char *buffer, unsigned char coun
   unsigned int i;
   
   while (!(RF1AIFCTL1 & RFINSTRIFG));       // Wait for INSTRIFG
-  RF1AINSTR1B = (addr | RF_REGWR);          // Send addr of first conf. reg. to be read 
+  RF1AINSTR1B = (addr | RF_REGRD);          // Send addr of first conf. reg. to be read 
                                             // ... and the burst-register read instruction
   for (i = 0; i < (count-1); i++)
   {
@@ -202,7 +202,7 @@ void ReceiveOff2(void)
 // Called if an interface error has occured. No interface errors should 
 // exist in application code, so this is intended to be used for debugging
 // or to catch errant operating conditions. 
-static void RF1A_interface_error_handler(void)
+static void RF1A_interface_error_handler2(void)
 {
   switch(__even_in_range(RF1AIFERRV,8))
   {
@@ -231,14 +231,14 @@ static void RF1A_interface_error_handler(void)
 }
 
 // If RF1A_interrupt_handler is called, an interface interrupt has occured.
-static void RF1A_interrupt_handler(void)
+static void RF1A_interrupt_handler2(void)
 {
   // RF1A interrupt is pending
   switch(__even_in_range(RF1AIFIV,14))
   {
     case  0: break;                         // No interrupt pending
     case  2:                                // RFERRIFG 
-      RF1A_interface_error_handler();
+      RF1A_interface_error_handler2();
     case  4: break;                         // RFDOUTIFG
     case  6: break;                         // RFSTATIFG
     case  8: break;                         // RFDINIFG
@@ -248,13 +248,13 @@ static void RF1A_interrupt_handler(void)
   }
 }
 
-#pragma vector=CC1101_VECTOR
+ #pragma vector=CC1101_VECTOR
 __interrupt void CC1101_ISR2(void)
 {
   switch(__even_in_range(RF1AIV,32))        // Prioritizing Radio Core Interrupts 
   {
     case  0:                                // No RF core interrupt pending                                            
-      RF1A_interrupt_handler();             // means RF1A interface interrupt pending
+      RF1A_interrupt_handler2();             // means RF1A interface interrupt pending
       break; 
     case  2: break;                         // RFIFG0 
     case  4: break;                         // RFIFG1

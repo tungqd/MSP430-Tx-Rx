@@ -153,8 +153,9 @@ int main(void){
   init_devices();
   while(1){ 
     asm("NOP");
-    //RF_Connection_Test();
+    
     RF_Connection_Test2();
+    //RF_Connection_Test();
     asm("NOP");
   }
   
